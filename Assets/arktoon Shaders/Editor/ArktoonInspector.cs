@@ -173,6 +173,52 @@ namespace ArktoonShaders
         MaterialProperty EmissiveFreak2BlinkIn;
         MaterialProperty EmissiveFreak2BlinkInMix;
         MaterialProperty EmissiveFreak2HueShift;
+        MaterialProperty EmissiveFreak3Tex;
+        MaterialProperty EmissiveFreak3Mask;
+        MaterialProperty EmissiveFreak3Color;
+        MaterialProperty EmissiveFreak3U;
+        MaterialProperty EmissiveFreak3V;
+        MaterialProperty EmissiveFreak3Depth;
+        MaterialProperty EmissiveFreak3DepthMask;
+        MaterialProperty EmissiveFreak3DepthMaskInvert;
+        MaterialProperty EmissiveFreak3Breathing;
+        MaterialProperty EmissiveFreak3BreathingMix;
+        MaterialProperty EmissiveFreak3BlinkOut;
+        MaterialProperty EmissiveFreak3BlinkOutMix;
+        MaterialProperty EmissiveFreak3BlinkIn;
+        MaterialProperty EmissiveFreak3BlinkInMix;
+        MaterialProperty EmissiveFreak3HueShift;
+        MaterialProperty EmissiveFreak4Tex;
+        MaterialProperty EmissiveFreak4Mask;
+        MaterialProperty EmissiveFreak4Color;
+        MaterialProperty EmissiveFreak4U;
+        MaterialProperty EmissiveFreak4V;
+        MaterialProperty EmissiveFreak4Depth;
+        MaterialProperty EmissiveFreak4DepthMask;
+        MaterialProperty EmissiveFreak4DepthMaskInvert;
+        MaterialProperty EmissiveFreak4Breathing;
+        MaterialProperty EmissiveFreak4BreathingMix;
+        MaterialProperty EmissiveFreak4BlinkOut;
+        MaterialProperty EmissiveFreak4BlinkOutMix;
+        MaterialProperty EmissiveFreak4BlinkIn;
+        MaterialProperty EmissiveFreak4BlinkInMix;
+        MaterialProperty EmissiveFreak4HueShift;
+        MaterialProperty EmissiveFreak5Tex;
+        MaterialProperty EmissiveFreak5Mask;
+        MaterialProperty EmissiveFreak5Color;
+        MaterialProperty EmissiveFreak5U;
+        MaterialProperty EmissiveFreak5V;
+        MaterialProperty EmissiveFreak5Depth;
+        MaterialProperty EmissiveFreak5DepthMask;
+        MaterialProperty EmissiveFreak5DepthMaskInvert;
+        MaterialProperty EmissiveFreak5Breathing;
+        MaterialProperty EmissiveFreak5BreathingMix;
+        MaterialProperty EmissiveFreak5BlinkOut;
+        MaterialProperty EmissiveFreak5BlinkOutMix;
+        MaterialProperty EmissiveFreak5BlinkIn;
+        MaterialProperty EmissiveFreak5BlinkInMix;
+        MaterialProperty EmissiveFreak5HueShift;
+
 
         // TODO: そろそろShaderUtil.GetPropertiesで一括処理したい。
         // ただ、その場合は、カスタムインスペクタで定義していない追加のプロパティを、このファイルを弄らずに動的に表示できるようにしてあげたい（改変の負荷軽減のため）
@@ -205,6 +251,7 @@ namespace ArktoonShaders
             bool isStencilWriterMask = shader.name.Contains("Stencil/WriterMask");
             bool isRefracted = shader.name.Contains("Refracted");
             bool isEmissiveFreak = shader.name.Contains("/EmissiveFreak/");
+            bool isEmissiveMadness = shader.name.Contains("/AQ_EmissiveMadness/");
 
             // FindProperties
             BaseTexture = FindProperty("_MainTex", props, false);
@@ -364,6 +411,54 @@ namespace ArktoonShaders
             EmissiveFreak2BlinkIn = FindProperty("_EmissiveFreak2BlinkIn", props, false);
             EmissiveFreak2BlinkInMix = FindProperty("_EmissiveFreak2BlinkInMix", props, false);
             EmissiveFreak2HueShift = FindProperty("_EmissiveFreak2HueShift", props, false);
+
+            EmissiveFreak3Tex = FindProperty("_EmissiveFreak3Tex", props, false);
+            EmissiveFreak3Mask = FindProperty("_EmissiveFreak3Mask", props, false);
+            EmissiveFreak3Color = FindProperty("_EmissiveFreak3Color", props, false);
+            EmissiveFreak3U = FindProperty("_EmissiveFreak3U", props, false);
+            EmissiveFreak3V = FindProperty("_EmissiveFreak3V", props, false);
+            EmissiveFreak3Depth = FindProperty("_EmissiveFreak3Depth", props, false);
+            EmissiveFreak3DepthMask = FindProperty("_EmissiveFreak3DepthMask", props, false);
+            EmissiveFreak3DepthMaskInvert = FindProperty("_EmissiveFreak3DepthMaskInvert", props, false);
+            EmissiveFreak3Breathing = FindProperty("_EmissiveFreak3Breathing", props, false);
+            EmissiveFreak3BreathingMix = FindProperty("_EmissiveFreak3BreathingMix", props, false);
+            EmissiveFreak3BlinkOut = FindProperty("_EmissiveFreak3BlinkOut", props, false);
+            EmissiveFreak3BlinkOutMix = FindProperty("_EmissiveFreak3BlinkOutMix", props, false);
+            EmissiveFreak3BlinkIn = FindProperty("_EmissiveFreak3BlinkIn", props, false);
+            EmissiveFreak3BlinkInMix = FindProperty("_EmissiveFreak3BlinkInMix", props, false);
+            EmissiveFreak3HueShift = FindProperty("_EmissiveFreak3HueShift", props, false);
+
+            EmissiveFreak4Tex = FindProperty("_EmissiveFreak4Tex", props, false);
+            EmissiveFreak4Mask = FindProperty("_EmissiveFreak4Mask", props, false);
+            EmissiveFreak4Color = FindProperty("_EmissiveFreak4Color", props, false);
+            EmissiveFreak4U = FindProperty("_EmissiveFreak4U", props, false);
+            EmissiveFreak4V = FindProperty("_EmissiveFreak4V", props, false);
+            EmissiveFreak4Depth = FindProperty("_EmissiveFreak4Depth", props, false);
+            EmissiveFreak4DepthMask = FindProperty("_EmissiveFreak4DepthMask", props, false);
+            EmissiveFreak4DepthMaskInvert = FindProperty("_EmissiveFreak4DepthMaskInvert", props, false);
+            EmissiveFreak4Breathing = FindProperty("_EmissiveFreak4Breathing", props, false);
+            EmissiveFreak4BreathingMix = FindProperty("_EmissiveFreak4BreathingMix", props, false);
+            EmissiveFreak4BlinkOut = FindProperty("_EmissiveFreak4BlinkOut", props, false);
+            EmissiveFreak4BlinkOutMix = FindProperty("_EmissiveFreak4BlinkOutMix", props, false);
+            EmissiveFreak4BlinkIn = FindProperty("_EmissiveFreak4BlinkIn", props, false);
+            EmissiveFreak4BlinkInMix = FindProperty("_EmissiveFreak4BlinkInMix", props, false);
+            EmissiveFreak4HueShift = FindProperty("_EmissiveFreak4HueShift", props, false);
+
+            EmissiveFreak5Tex = FindProperty("_EmissiveFreak5Tex", props, false);
+            EmissiveFreak5Mask = FindProperty("_EmissiveFreak5Mask", props, false);
+            EmissiveFreak5Color = FindProperty("_EmissiveFreak5Color", props, false);
+            EmissiveFreak5U = FindProperty("_EmissiveFreak5U", props, false);
+            EmissiveFreak5V = FindProperty("_EmissiveFreak5V", props, false);
+            EmissiveFreak5Depth = FindProperty("_EmissiveFreak5Depth", props, false);
+            EmissiveFreak5DepthMask = FindProperty("_EmissiveFreak5DepthMask", props, false);
+            EmissiveFreak5DepthMaskInvert = FindProperty("_EmissiveFreak5DepthMaskInvert", props, false);
+            EmissiveFreak5Breathing = FindProperty("_EmissiveFreak5Breathing", props, false);
+            EmissiveFreak5BreathingMix = FindProperty("_EmissiveFreak5BreathingMix", props, false);
+            EmissiveFreak5BlinkOut = FindProperty("_EmissiveFreak5BlinkOut", props, false);
+            EmissiveFreak5BlinkOutMix = FindProperty("_EmissiveFreak5BlinkOutMix", props, false);
+            EmissiveFreak5BlinkIn = FindProperty("_EmissiveFreak5BlinkIn", props, false);
+            EmissiveFreak5BlinkInMix = FindProperty("_EmissiveFreak5BlinkInMix", props, false);
+            EmissiveFreak5HueShift = FindProperty("_EmissiveFreak5HueShift", props, false);
 
             EditorGUIUtility.labelWidth = 0f;
 
@@ -743,7 +838,7 @@ namespace ArktoonShaders
                 }
 
                 // Scrolled Emission
-                if(isEmissiveFreak)
+                if(isEmissiveFreak || isEmissiveMadness)
                 {
                     UIHelper.ShurikenHeader("Emissive Freak");
                     UIHelper.DrawWithGroup(() => {
@@ -802,6 +897,91 @@ namespace ArktoonShaders
                                 });
                             });
                         });
+                        if(isEmissiveMadness){
+                            UIHelper.DrawWithGroup(() => {
+                                EditorGUILayout.LabelField("3rd", EditorStyles.boldLabel);
+                                UIHelper.DrawWithGroup(() => {
+                                    materialEditor.TexturePropertySingleLine(new GUIContent("Texture & Color", "Texture and Color"), EmissiveFreak3Tex, EmissiveFreak3Color);
+                                    materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak3Tex);
+                                    materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask", "Texture and Color Mask"), EmissiveFreak3Mask);
+                                    materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak3Mask);
+                                    UIHelper.DrawWithGroup(() => {
+                                        materialEditor.ShaderProperty(EmissiveFreak3U, "Scroll U");
+                                        materialEditor.ShaderProperty(EmissiveFreak3V, "Scroll V");
+                                    });
+                                    UIHelper.DrawWithGroup(() => {
+                                        materialEditor.TexturePropertySingleLine(new GUIContent("Depth & Mask", "Depth and Mask Texture"), EmissiveFreak3DepthMask, EmissiveFreak3Depth);
+                                        materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak3DepthMask);
+                                        materialEditor.ShaderProperty(EmissiveFreak3DepthMaskInvert, "Invert Depth Mask");
+                                    });
+                                    UIHelper.DrawWithGroup(() => {
+                                        materialEditor.ShaderProperty(EmissiveFreak3Breathing, "Breathing");
+                                        materialEditor.ShaderProperty(EmissiveFreak3BreathingMix, "Breathing Mix");
+                                        materialEditor.ShaderProperty(EmissiveFreak3BlinkOut, "Blink Out");
+                                        materialEditor.ShaderProperty(EmissiveFreak3BlinkOutMix, "Blink Out Mix");
+                                        materialEditor.ShaderProperty(EmissiveFreak3BlinkIn, "Blink In");
+                                        materialEditor.ShaderProperty(EmissiveFreak3BlinkInMix, "Blink In Mix");
+                                        materialEditor.ShaderProperty(EmissiveFreak3HueShift, "Hue Shift");
+                                    });
+                                });
+                            });
+                            
+                            UIHelper.DrawWithGroup(() => {
+                                EditorGUILayout.LabelField("4th", EditorStyles.boldLabel);
+                                UIHelper.DrawWithGroup(() => {
+                                    materialEditor.TexturePropertySingleLine(new GUIContent("Texture & Color", "Texture and Color"), EmissiveFreak4Tex, EmissiveFreak4Color);
+                                    materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak4Tex);
+                                    materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask", "Texture and Color Mask"), EmissiveFreak4Mask);
+                                    materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak4Mask);
+                                    UIHelper.DrawWithGroup(() => {
+                                        materialEditor.ShaderProperty(EmissiveFreak4U, "Scroll U");
+                                        materialEditor.ShaderProperty(EmissiveFreak4V, "Scroll V");
+                                    });
+                                    UIHelper.DrawWithGroup(() => {
+                                        materialEditor.TexturePropertySingleLine(new GUIContent("Depth & Mask", "Depth and Mask Texture"), EmissiveFreak4DepthMask, EmissiveFreak4Depth);
+                                        materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak4DepthMask);
+                                        materialEditor.ShaderProperty(EmissiveFreak4DepthMaskInvert, "Invert Depth Mask");
+                                    });
+                                    UIHelper.DrawWithGroup(() => {
+                                        materialEditor.ShaderProperty(EmissiveFreak4Breathing, "Breathing");
+                                        materialEditor.ShaderProperty(EmissiveFreak4BreathingMix, "Breathing Mix");
+                                        materialEditor.ShaderProperty(EmissiveFreak4BlinkOut, "Blink Out");
+                                        materialEditor.ShaderProperty(EmissiveFreak4BlinkOutMix, "Blink Out Mix");
+                                        materialEditor.ShaderProperty(EmissiveFreak4BlinkIn, "Blink In");
+                                        materialEditor.ShaderProperty(EmissiveFreak4BlinkInMix, "Blink In Mix");
+                                        materialEditor.ShaderProperty(EmissiveFreak4HueShift, "Hue Shift");
+                                    });
+                                });
+                            });
+                            
+                            UIHelper.DrawWithGroup(() => {
+                                EditorGUILayout.LabelField("5th", EditorStyles.boldLabel);
+                                UIHelper.DrawWithGroup(() => {
+                                    materialEditor.TexturePropertySingleLine(new GUIContent("Texture & Color", "Texture and Color"), EmissiveFreak5Tex, EmissiveFreak5Color);
+                                    materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak5Tex);
+                                    materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask", "Texture and Color Mask"), EmissiveFreak5Mask);
+                                    materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak5Mask);
+                                    UIHelper.DrawWithGroup(() => {
+                                        materialEditor.ShaderProperty(EmissiveFreak5U, "Scroll U");
+                                        materialEditor.ShaderProperty(EmissiveFreak5V, "Scroll V");
+                                    });
+                                    UIHelper.DrawWithGroup(() => {
+                                        materialEditor.TexturePropertySingleLine(new GUIContent("Depth & Mask", "Depth and Mask Texture"), EmissiveFreak5DepthMask, EmissiveFreak5Depth);
+                                        materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak5DepthMask);
+                                        materialEditor.ShaderProperty(EmissiveFreak5DepthMaskInvert, "Invert Depth Mask");
+                                    });
+                                    UIHelper.DrawWithGroup(() => {
+                                        materialEditor.ShaderProperty(EmissiveFreak5Breathing, "Breathing");
+                                        materialEditor.ShaderProperty(EmissiveFreak5BreathingMix, "Breathing Mix");
+                                        materialEditor.ShaderProperty(EmissiveFreak5BlinkOut, "Blink Out");
+                                        materialEditor.ShaderProperty(EmissiveFreak5BlinkOutMix, "Blink Out Mix");
+                                        materialEditor.ShaderProperty(EmissiveFreak5BlinkIn, "Blink In");
+                                        materialEditor.ShaderProperty(EmissiveFreak5BlinkInMix, "Blink In Mix");
+                                        materialEditor.ShaderProperty(EmissiveFreak5HueShift, "Hue Shift");
+                                    });
+                                });
+                            });
+                        }
                     });
                 }
 
