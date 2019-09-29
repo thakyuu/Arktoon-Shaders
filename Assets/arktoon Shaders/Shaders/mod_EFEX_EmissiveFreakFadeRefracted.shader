@@ -147,6 +147,10 @@ Shader "arktoon/_mod_Extra/EmissiveFreakExtend/FadeRefracted" {
         _EmissiveFreak1Mask ("[EmissiveFreak] Mask", 2D ) = "white" {}
         _EmissiveFreak1U ("[EmissiveFreak] U Scroll", Float ) = 0
         _EmissiveFreak1V ("[EmissiveFreak] V Scroll", Float ) = 0
+        _EmissiveFreak1U2 ("[EmissiveFreak] U Scroll Sin Value", Float ) = 0
+        _EmissiveFreak1USpeed ("[EmissiveFreak] U Scroll Sin Speed", Float ) = 0
+        _EmissiveFreak1V2 ("[EmissiveFreak] V Scroll Sin Value", Float ) = 0
+        _EmissiveFreak1VSpeed ("[EmissiveFreak] V Scroll Sin Speed", Float ) = 0
         _EmissiveFreak1Depth ("[EmissiveFreak] Depth", Range(-1, 1) ) = 0
         _EmissiveFreak1DepthMask ("[EmissiveFreak] Depth Mask", 2D ) = "white" {}
         [ATSToggle]_EmissiveFreak1DepthMaskInvert ("[EmissiveFreak] Invert Depth Mask", Float ) = 0
@@ -164,6 +168,10 @@ Shader "arktoon/_mod_Extra/EmissiveFreakExtend/FadeRefracted" {
         _EmissiveFreak2Mask ("[EmissiveFreak2] Mask", 2D ) = "white" {}
         _EmissiveFreak2U ("[EmissiveFreak2] U Scroll", Float ) = 0
         _EmissiveFreak2V ("[EmissiveFreak2] V Scroll", Float ) = 0
+        _EmissiveFreak2U2 ("[EmissiveFreak] U Scroll Sin Value", Float ) = 0
+        _EmissiveFreak2USpeed ("[EmissiveFreak] U Scroll Sin Speed", Float ) = 0
+        _EmissiveFreak2V2 ("[EmissiveFreak] V Scroll Sin Value", Float ) = 0
+        _EmissiveFreak2VSpeed ("[EmissiveFreak] V Scroll Sin Speed", Float ) = 0
         _EmissiveFreak2Depth ("[EmissiveFreak2] Depth", Range(-1, 1) ) = 0
         _EmissiveFreak2DepthMask ("[EmissiveFreak2] Depth Mask", 2D ) = "white" {}
         [ATSToggle]_EmissiveFreak2DepthMaskInvert ("[EmissiveFreak2] Invert Depth Mask", Float ) = 0
@@ -181,6 +189,10 @@ Shader "arktoon/_mod_Extra/EmissiveFreakExtend/FadeRefracted" {
         _EmissiveFreak3Mask ("[EmissiveFreak3] Mask", 2D ) = "white" {}
         _EmissiveFreak3U ("[EmissiveFreak3] U Scroll", Float ) = 0
         _EmissiveFreak3V ("[EmissiveFreak3] V Scroll", Float ) = 0
+        _EmissiveFreak3U2 ("[EmissiveFreak] U Scroll Sin Value", Float ) = 0
+        _EmissiveFreak3USpeed ("[EmissiveFreak] U Scroll Sin Speed", Float ) = 0
+        _EmissiveFreak3V2 ("[EmissiveFreak] V Scroll Sin Value", Float ) = 0
+        _EmissiveFreak3VSpeed ("[EmissiveFreak] V Scroll Sin Speed", Float ) = 0
         _EmissiveFreak3Depth ("[EmissiveFreak3] Depth", Range(-1, 1) ) = 0
         _EmissiveFreak3DepthMask ("[EmissiveFreak3] Depth Mask", 2D ) = "white" {}
         [ATSToggle]_EmissiveFreak3DepthMaskInvert ("[EmissiveFreak3] Invert Depth Mask", Float ) = 0
@@ -198,6 +210,10 @@ Shader "arktoon/_mod_Extra/EmissiveFreakExtend/FadeRefracted" {
         _EmissiveFreak4Mask ("[EmissiveFreak4] Mask", 2D ) = "white" {}
         _EmissiveFreak4U ("[EmissiveFreak4] U Scroll", Float ) = 0
         _EmissiveFreak4V ("[EmissiveFreak4] V Scroll", Float ) = 0
+        _EmissiveFreak4U2 ("[EmissiveFreak] U Scroll Sin Value", Float ) = 0
+        _EmissiveFreak4USpeed ("[EmissiveFreak] U Scroll Sin Speed", Float ) = 0
+        _EmissiveFreak4V2 ("[EmissiveFreak] V Scroll Sin Value", Float ) = 0
+        _EmissiveFreak4VSpeed ("[EmissiveFreak] V Scroll Sin Speed", Float ) = 0
         _EmissiveFreak4Depth ("[EmissiveFreak4] Depth", Range(-1, 1) ) = 0
         _EmissiveFreak4DepthMask ("[EmissiveFreak4] Depth Mask", 2D ) = "white" {}
         [ATSToggle]_EmissiveFreak4DepthMaskInvert ("[EmissiveFreak4] Invert Depth Mask", Float ) = 0
@@ -215,6 +231,10 @@ Shader "arktoon/_mod_Extra/EmissiveFreakExtend/FadeRefracted" {
         _EmissiveFreak5Mask ("[EmissiveFreak5] Mask", 2D ) = "white" {}
         _EmissiveFreak5U ("[EmissiveFreak5] U Scroll", Float ) = 0
         _EmissiveFreak5V ("[EmissiveFreak5] V Scroll", Float ) = 0
+        _EmissiveFreak5U2 ("[EmissiveFreak] U Scroll Sin Value", Float ) = 0
+        _EmissiveFreak5USpeed ("[EmissiveFreak] U Scroll Sin Speed", Float ) = 0
+        _EmissiveFreak5V2 ("[EmissiveFreak] V Scroll Sin Value", Float ) = 0
+        _EmissiveFreak5VSpeed ("[EmissiveFreak] V Scroll Sin Speed", Float ) = 0
         _EmissiveFreak5Depth ("[EmissiveFreak5] Depth", Range(-1, 1) ) = 0
         _EmissiveFreak5DepthMask ("[EmissiveFreak5] Depth Mask", 2D ) = "white" {}
         [ATSToggle]_EmissiveFreak5DepthMaskInvert ("[EmissiveFreak5] Invert Depth Mask", Float ) = 0
