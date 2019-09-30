@@ -351,7 +351,7 @@ float4 frag(VertexOutput i) : COLOR {
     #ifdef ARKTOON_EMISSIVE_FREAK
         float time = _Time.r;
 
-        float2 emissiveFreak1uv = i.uv0 + float2(fmod(_EmissiveFreak1U * time, 1.0 / _EmissiveFreak1Tex_ST.x) + (_EmissiveFreak1U2 * cos(_Time.y * _EmissiveFreak1USpeed)), fmod(time * _EmissiveFreak1V, 1.0 / _EmissiveFreak1Tex_ST.y) + (_EmissiveFreak1V2 * cos(_Time.y * _EmissiveFreak1VSpeed)));
+        float2 emissiveFreak1uv = i.uv0 + float2(fmod(_EmissiveFreak1U * time, 1.0 / _EmissiveFreak1Tex_ST.x) + (_EmissiveFreak1USinAmp * sin(time * _EmissiveFreak1USinFreq)), fmod(time * _EmissiveFreak1V, 1.0 / _EmissiveFreak1Tex_ST.y) + (_EmissiveFreak1VSinAmp * sin(time * _EmissiveFreak1VSinFreq)));
         float _EmissiveFreak1DepthMask_var = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak1DepthMask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak1DepthMask)).r;
         float2 emissiveFreak1Transform = _EmissiveFreak1Depth * (_EmissiveFreak1DepthMask_var - _EmissiveFreak1DepthMaskInvert) * mul(tangentTransform, viewDirection).xy + emissiveFreak1uv;
         float _EmissiveFreak1Mask_var =  UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak1Mask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak1Mask)).r;
@@ -366,7 +366,7 @@ float4 frag(VertexOutput i) : COLOR {
         emissiveFreak1 = lerp(emissiveFreak1, emissiveFreak1 * emissiveFreak1BlinkOut, _EmissiveFreak1BlinkOutMix);
         emissiveFreak1 = lerp(emissiveFreak1, emissiveFreak1 * emissiveFreak1BlinkIn, _EmissiveFreak1BlinkInMix);
 
-        float2 emissiveFreak2uv = i.uv0 + float2(fmod(_EmissiveFreak2U * time, 1.0 / _EmissiveFreak2Tex_ST.x) + (_EmissiveFreak2U2 * cos(_Time.y * _EmissiveFreak2USpeed)), fmod(time * _EmissiveFreak2V, 1.0 / _EmissiveFreak2Tex_ST.y) + (_EmissiveFreak2V2 * cos(_Time.y * _EmissiveFreak2VSpeed)));
+        float2 emissiveFreak2uv = i.uv0 + float2(fmod(_EmissiveFreak2U * time, 1.0 / _EmissiveFreak2Tex_ST.x) + (_EmissiveFreak2USinAmp * sin(time * _EmissiveFreak2USinFreq)), fmod(time * _EmissiveFreak2V, 1.0 / _EmissiveFreak2Tex_ST.y) + (_EmissiveFreak2VSinAmp * sin(time * _EmissiveFreak2VSinFreq)));
         float _EmissiveFreak2DepthMask_var = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak2DepthMask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak2DepthMask)).r;
         float2 emissiveFreak2Transform = _EmissiveFreak2Depth * (_EmissiveFreak2DepthMask_var - _EmissiveFreak2DepthMaskInvert) * mul(tangentTransform, viewDirection).xy + emissiveFreak2uv;
         float _EmissiveFreak2Mask_var =  UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak2Mask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak2Mask)).r;
@@ -381,7 +381,7 @@ float4 frag(VertexOutput i) : COLOR {
         emissiveFreak2 = lerp(emissiveFreak2, emissiveFreak2 * emissiveFreak2BlinkOut, _EmissiveFreak2BlinkOutMix);
         emissiveFreak2 = lerp(emissiveFreak2, emissiveFreak2 * emissiveFreak2BlinkIn, _EmissiveFreak2BlinkInMix);
 
-        float2 emissiveFreak3uv = i.uv0 + float2(fmod(_EmissiveFreak3U * time, 1.0 / _EmissiveFreak3Tex_ST.x) + (_EmissiveFreak3U2 * cos(_Time.y * _EmissiveFreak3USpeed)), fmod(time * _EmissiveFreak3V, 1.0 / _EmissiveFreak3Tex_ST.y) + (_EmissiveFreak3V2 * cos(_Time.y * _EmissiveFreak3VSpeed)));
+        float2 emissiveFreak3uv = i.uv0 + float2(fmod(_EmissiveFreak3U * time, 1.0 / _EmissiveFreak3Tex_ST.x) + (_EmissiveFreak3USinAmp * sin(time * _EmissiveFreak3USinFreq)), fmod(time * _EmissiveFreak3V, 1.0 / _EmissiveFreak3Tex_ST.y) + (_EmissiveFreak3VSinAmp * sin(time * _EmissiveFreak3VSinFreq)));
         float _EmissiveFreak3DepthMask_var = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak3DepthMask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak3DepthMask)).r;
         float2 emissiveFreak3Transform = _EmissiveFreak3Depth * (_EmissiveFreak3DepthMask_var - _EmissiveFreak3DepthMaskInvert) * mul(tangentTransform, viewDirection).xy + emissiveFreak3uv;
         float _EmissiveFreak3Mask_var =  UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak3Mask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak3Mask)).r;
@@ -396,7 +396,7 @@ float4 frag(VertexOutput i) : COLOR {
         emissiveFreak3 = lerp(emissiveFreak3, emissiveFreak3 * emissiveFreak3BlinkOut, _EmissiveFreak3BlinkOutMix);
         emissiveFreak3 = lerp(emissiveFreak3, emissiveFreak3 * emissiveFreak3BlinkIn, _EmissiveFreak3BlinkInMix);
 
-        float2 emissiveFreak4uv = i.uv0 + float2(fmod(_EmissiveFreak4U * time, 1.0 / _EmissiveFreak4Tex_ST.x) + (_EmissiveFreak4U2 * cos(_Time.y * _EmissiveFreak4USpeed)), fmod(time * _EmissiveFreak4V, 1.0 / _EmissiveFreak4Tex_ST.y) + (_EmissiveFreak4V2 * cos(_Time.y * _EmissiveFreak4VSpeed)));
+        float2 emissiveFreak4uv = i.uv0 + float2(fmod(_EmissiveFreak4U * time, 1.0 / _EmissiveFreak4Tex_ST.x) + (_EmissiveFreak4USinAmp * sin(time * _EmissiveFreak4USinFreq)), fmod(time * _EmissiveFreak4V, 1.0 / _EmissiveFreak4Tex_ST.y) + (_EmissiveFreak4VSinAmp * sin(time * _EmissiveFreak4VSinFreq)));
         float _EmissiveFreak4DepthMask_var = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak4DepthMask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak4DepthMask)).r;
         float2 emissiveFreak4Transform = _EmissiveFreak4Depth * (_EmissiveFreak4DepthMask_var - _EmissiveFreak4DepthMaskInvert) * mul(tangentTransform, viewDirection).xy + emissiveFreak4uv;
         float _EmissiveFreak4Mask_var =  UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak4Mask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak4Mask)).r;
@@ -411,7 +411,7 @@ float4 frag(VertexOutput i) : COLOR {
         emissiveFreak4 = lerp(emissiveFreak4, emissiveFreak4 * emissiveFreak4BlinkOut, _EmissiveFreak4BlinkOutMix);
         emissiveFreak4 = lerp(emissiveFreak4, emissiveFreak4 * emissiveFreak4BlinkIn, _EmissiveFreak4BlinkInMix);
 
-        float2 emissiveFreak5uv = i.uv0 + float2(fmod(_EmissiveFreak5U * time, 1.0 / _EmissiveFreak5Tex_ST.x) + (_EmissiveFreak5U2 * cos(_Time.y * _EmissiveFreak5USpeed)), fmod(time * _EmissiveFreak5V, 1.0 / _EmissiveFreak5Tex_ST.y) + (_EmissiveFreak5V2 * cos(_Time.y * _EmissiveFreak5VSpeed)));
+        float2 emissiveFreak5uv = i.uv0 + float2(fmod(_EmissiveFreak5U * time, 1.0 / _EmissiveFreak5Tex_ST.x) + (_EmissiveFreak5USinAmp * sin(time * _EmissiveFreak5USinFreq)), fmod(time * _EmissiveFreak5V, 1.0 / _EmissiveFreak5Tex_ST.y) + (_EmissiveFreak5VSinAmp * sin(time * _EmissiveFreak5VSinFreq)));
         float _EmissiveFreak5DepthMask_var = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak5DepthMask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak5DepthMask)).r;
         float2 emissiveFreak5Transform = _EmissiveFreak5Depth * (_EmissiveFreak5DepthMask_var - _EmissiveFreak5DepthMaskInvert) * mul(tangentTransform, viewDirection).xy + emissiveFreak5uv;
         float _EmissiveFreak5Mask_var =  UNITY_SAMPLE_TEX2D_SAMPLER(_EmissiveFreak5Mask, REF_MAINTEX, TRANSFORM_TEX(i.uv0, _EmissiveFreak5Mask)).r;

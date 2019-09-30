@@ -149,11 +149,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty EmissiveFreak1Color2;
         MaterialProperty EmissiveFreak1ColorChangeSpeed;
         MaterialProperty EmissiveFreak1U;
-        MaterialProperty EmissiveFreak1U2;
-        MaterialProperty EmissiveFreak1USpeed;
+        MaterialProperty EmissiveFreak1USinAmp;
+        MaterialProperty EmissiveFreak1USinFreq;
         MaterialProperty EmissiveFreak1V;
-        MaterialProperty EmissiveFreak1V2;
-        MaterialProperty EmissiveFreak1VSpeed;
+        MaterialProperty EmissiveFreak1VSinAmp;
+        MaterialProperty EmissiveFreak1VSinFreq;
         MaterialProperty EmissiveFreak1Depth;
         MaterialProperty EmissiveFreak1DepthMask;
         MaterialProperty EmissiveFreak1DepthMaskInvert;
@@ -170,11 +170,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty EmissiveFreak2Color2;
         MaterialProperty EmissiveFreak2ColorChangeSpeed;
         MaterialProperty EmissiveFreak2U;
-        MaterialProperty EmissiveFreak2U2;
-        MaterialProperty EmissiveFreak2USpeed;
+        MaterialProperty EmissiveFreak2USinAmp;
+        MaterialProperty EmissiveFreak2USinFreq;
         MaterialProperty EmissiveFreak2V;
-        MaterialProperty EmissiveFreak2V2;
-        MaterialProperty EmissiveFreak2VSpeed;
+        MaterialProperty EmissiveFreak2VSinAmp;
+        MaterialProperty EmissiveFreak2VSinFreq;
         MaterialProperty EmissiveFreak2Depth;
         MaterialProperty EmissiveFreak2DepthMask;
         MaterialProperty EmissiveFreak2DepthMaskInvert;
@@ -191,11 +191,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty EmissiveFreak3Color2;
         MaterialProperty EmissiveFreak3ColorChangeSpeed;
         MaterialProperty EmissiveFreak3U;
-        MaterialProperty EmissiveFreak3U2;
-        MaterialProperty EmissiveFreak3USpeed;
+        MaterialProperty EmissiveFreak3USinAmp;
+        MaterialProperty EmissiveFreak3USinFreq;
         MaterialProperty EmissiveFreak3V;
-        MaterialProperty EmissiveFreak3V2;
-        MaterialProperty EmissiveFreak3VSpeed;
+        MaterialProperty EmissiveFreak3VSinAmp;
+        MaterialProperty EmissiveFreak3VSinFreq;
         MaterialProperty EmissiveFreak3Depth;
         MaterialProperty EmissiveFreak3DepthMask;
         MaterialProperty EmissiveFreak3DepthMaskInvert;
@@ -212,11 +212,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty EmissiveFreak4Color2;
         MaterialProperty EmissiveFreak4ColorChangeSpeed;
         MaterialProperty EmissiveFreak4U;
-        MaterialProperty EmissiveFreak4U2;
-        MaterialProperty EmissiveFreak4USpeed;
+        MaterialProperty EmissiveFreak4USinAmp;
+        MaterialProperty EmissiveFreak4USinFreq;
         MaterialProperty EmissiveFreak4V;
-        MaterialProperty EmissiveFreak4V2;
-        MaterialProperty EmissiveFreak4VSpeed;
+        MaterialProperty EmissiveFreak4VSinAmp;
+        MaterialProperty EmissiveFreak4VSinFreq;
         MaterialProperty EmissiveFreak4Depth;
         MaterialProperty EmissiveFreak4DepthMask;
         MaterialProperty EmissiveFreak4DepthMaskInvert;
@@ -233,11 +233,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty EmissiveFreak5Color2;
         MaterialProperty EmissiveFreak5ColorChangeSpeed;
         MaterialProperty EmissiveFreak5U;
-        MaterialProperty EmissiveFreak5U2;
-        MaterialProperty EmissiveFreak5USpeed;
+        MaterialProperty EmissiveFreak5USinAmp;
+        MaterialProperty EmissiveFreak5USinFreq;
         MaterialProperty EmissiveFreak5V;
-        MaterialProperty EmissiveFreak5V2;
-        MaterialProperty EmissiveFreak5VSpeed;
+        MaterialProperty EmissiveFreak5VSinAmp;
+        MaterialProperty EmissiveFreak5VSinFreq;
         MaterialProperty EmissiveFreak5Depth;
         MaterialProperty EmissiveFreak5DepthMask;
         MaterialProperty EmissiveFreak5DepthMaskInvert;
@@ -414,11 +414,11 @@ namespace ArktoonShadersEFEX
             EmissiveFreak1Color2 = FindProperty("_EmissiveFreak1Color2", props, false);
             EmissiveFreak1ColorChangeSpeed = FindProperty("_EmissiveFreak1ColorChangeSpeed", props, false);
             EmissiveFreak1U = FindProperty("_EmissiveFreak1U", props, false);
-            EmissiveFreak1U2 = FindProperty("_EmissiveFreak1U2", props, false);
-            EmissiveFreak1USpeed = FindProperty("_EmissiveFreak1USpeed", props, false);
+            EmissiveFreak1USinAmp = FindProperty("_EmissiveFreak1USinAmp", props, false);
+            EmissiveFreak1USinFreq = FindProperty("_EmissiveFreak1USinFreq", props, false);
             EmissiveFreak1V = FindProperty("_EmissiveFreak1V", props, false);
-            EmissiveFreak1V2 = FindProperty("_EmissiveFreak1V2", props, false);
-            EmissiveFreak1VSpeed = FindProperty("_EmissiveFreak1VSpeed", props, false);
+            EmissiveFreak1VSinAmp = FindProperty("_EmissiveFreak1VSinAmp", props, false);
+            EmissiveFreak1VSinFreq = FindProperty("_EmissiveFreak1VSinFreq", props, false);
             EmissiveFreak1Depth = FindProperty("_EmissiveFreak1Depth", props, false);
             EmissiveFreak1DepthMask = FindProperty("_EmissiveFreak1DepthMask", props, false);
             EmissiveFreak1DepthMaskInvert = FindProperty("_EmissiveFreak1DepthMaskInvert", props, false);
@@ -436,11 +436,11 @@ namespace ArktoonShadersEFEX
             EmissiveFreak2Color2 = FindProperty("_EmissiveFreak2Color2", props, false);
             EmissiveFreak2ColorChangeSpeed = FindProperty("_EmissiveFreak2ColorChangeSpeed", props, false);
             EmissiveFreak2U = FindProperty("_EmissiveFreak2U", props, false);
-            EmissiveFreak2U2 = FindProperty("_EmissiveFreak2U2", props, false);
-            EmissiveFreak2USpeed = FindProperty("_EmissiveFreak2USpeed", props, false);
+            EmissiveFreak2USinAmp = FindProperty("_EmissiveFreak2USinAmp", props, false);
+            EmissiveFreak2USinFreq = FindProperty("_EmissiveFreak2USinFreq", props, false);
             EmissiveFreak2V = FindProperty("_EmissiveFreak2V", props, false);
-            EmissiveFreak2V2 = FindProperty("_EmissiveFreak2V2", props, false);
-            EmissiveFreak2VSpeed = FindProperty("_EmissiveFreak2VSpeed", props, false);
+            EmissiveFreak2VSinAmp = FindProperty("_EmissiveFreak2VSinAmp", props, false);
+            EmissiveFreak2VSinFreq = FindProperty("_EmissiveFreak2VSinFreq", props, false);
             EmissiveFreak2Depth = FindProperty("_EmissiveFreak2Depth", props, false);
             EmissiveFreak2DepthMask = FindProperty("_EmissiveFreak2DepthMask", props, false);
             EmissiveFreak2DepthMaskInvert = FindProperty("_EmissiveFreak2DepthMaskInvert", props, false);
@@ -458,11 +458,11 @@ namespace ArktoonShadersEFEX
             EmissiveFreak3Color2 = FindProperty("_EmissiveFreak3Color2", props, false);
             EmissiveFreak3ColorChangeSpeed = FindProperty("_EmissiveFreak3ColorChangeSpeed", props, false);
             EmissiveFreak3U = FindProperty("_EmissiveFreak3U", props, false);
-            EmissiveFreak3U2 = FindProperty("_EmissiveFreak3U2", props, false);
-            EmissiveFreak3USpeed = FindProperty("_EmissiveFreak3USpeed", props, false);
+            EmissiveFreak3USinAmp = FindProperty("_EmissiveFreak3USinAmp", props, false);
+            EmissiveFreak3USinFreq = FindProperty("_EmissiveFreak3USinFreq", props, false);
             EmissiveFreak3V = FindProperty("_EmissiveFreak3V", props, false);
-            EmissiveFreak3V2 = FindProperty("_EmissiveFreak3V2", props, false);
-            EmissiveFreak3VSpeed = FindProperty("_EmissiveFreak3VSpeed", props, false);
+            EmissiveFreak3VSinAmp = FindProperty("_EmissiveFreak3VSinAmp", props, false);
+            EmissiveFreak3VSinFreq = FindProperty("_EmissiveFreak3VSinFreq", props, false);
             EmissiveFreak3Depth = FindProperty("_EmissiveFreak3Depth", props, false);
             EmissiveFreak3DepthMask = FindProperty("_EmissiveFreak3DepthMask", props, false);
             EmissiveFreak3DepthMaskInvert = FindProperty("_EmissiveFreak3DepthMaskInvert", props, false);
@@ -480,11 +480,11 @@ namespace ArktoonShadersEFEX
             EmissiveFreak4Color2 = FindProperty("_EmissiveFreak4Color2", props, false);
             EmissiveFreak4ColorChangeSpeed = FindProperty("_EmissiveFreak4ColorChangeSpeed", props, false);
             EmissiveFreak4U = FindProperty("_EmissiveFreak4U", props, false);
-            EmissiveFreak4U2 = FindProperty("_EmissiveFreak4U2", props, false);
-            EmissiveFreak4USpeed = FindProperty("_EmissiveFreak4USpeed", props, false);
+            EmissiveFreak4USinAmp = FindProperty("_EmissiveFreak4USinAmp", props, false);
+            EmissiveFreak4USinFreq = FindProperty("_EmissiveFreak4USinFreq", props, false);
             EmissiveFreak4V = FindProperty("_EmissiveFreak4V", props, false);
-            EmissiveFreak4V2 = FindProperty("_EmissiveFreak4V2", props, false);
-            EmissiveFreak4VSpeed = FindProperty("_EmissiveFreak4VSpeed", props, false);
+            EmissiveFreak4VSinAmp = FindProperty("_EmissiveFreak4VSinAmp", props, false);
+            EmissiveFreak4VSinFreq = FindProperty("_EmissiveFreak4VSinFreq", props, false);
             EmissiveFreak4Depth = FindProperty("_EmissiveFreak4Depth", props, false);
             EmissiveFreak4DepthMask = FindProperty("_EmissiveFreak4DepthMask", props, false);
             EmissiveFreak4DepthMaskInvert = FindProperty("_EmissiveFreak4DepthMaskInvert", props, false);
@@ -502,11 +502,11 @@ namespace ArktoonShadersEFEX
             EmissiveFreak5Color2 = FindProperty("_EmissiveFreak5Color2", props, false);
             EmissiveFreak5ColorChangeSpeed = FindProperty("_EmissiveFreak5ColorChangeSpeed", props, false);
             EmissiveFreak5U = FindProperty("_EmissiveFreak5U", props, false);
-            EmissiveFreak5U2 = FindProperty("_EmissiveFreak5U2", props, false);
-            EmissiveFreak5USpeed = FindProperty("_EmissiveFreak5USpeed", props, false);
+            EmissiveFreak5USinAmp = FindProperty("_EmissiveFreak5USinAmp", props, false);
+            EmissiveFreak5USinFreq = FindProperty("_EmissiveFreak5USinFreq", props, false);
             EmissiveFreak5V = FindProperty("_EmissiveFreak5V", props, false);
-            EmissiveFreak5V2 = FindProperty("_EmissiveFreak5V2", props, false);
-            EmissiveFreak5VSpeed = FindProperty("_EmissiveFreak5VSpeed", props, false);
+            EmissiveFreak5VSinAmp = FindProperty("_EmissiveFreak5VSinAmp", props, false);
+            EmissiveFreak5VSinFreq = FindProperty("_EmissiveFreak5VSinFreq", props, false);
             EmissiveFreak5Depth = FindProperty("_EmissiveFreak5Depth", props, false);
             EmissiveFreak5DepthMask = FindProperty("_EmissiveFreak5DepthMask", props, false);
             EmissiveFreak5DepthMaskInvert = FindProperty("_EmissiveFreak5DepthMaskInvert", props, false);
@@ -910,11 +910,11 @@ namespace ArktoonShadersEFEX
                                 materialEditor.ShaderProperty(EmissiveFreak1ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak1U, "Scroll U");
-                                    materialEditor.ShaderProperty(EmissiveFreak1U2, "Scroll U Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak1USpeed, "Scroll U Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak1USinAmp, "Scroll U Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak1USinFreq, "Scroll U Sin Frequency");
                                     materialEditor.ShaderProperty(EmissiveFreak1V, "Scroll V");
-                                    materialEditor.ShaderProperty(EmissiveFreak1V2, "Scroll V Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak1VSpeed, "Scroll V Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak1VSinAmp, "Scroll V Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak1VSinFreq, "Scroll V Sin Frequency");
                                 });
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.TexturePropertySingleLine(new GUIContent("Depth & Mask", "Depth and Mask Texture"), EmissiveFreak1DepthMask, EmissiveFreak1Depth);
@@ -943,11 +943,11 @@ namespace ArktoonShadersEFEX
                                 materialEditor.ShaderProperty(EmissiveFreak2ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak2U, "Scroll U");
-                                    materialEditor.ShaderProperty(EmissiveFreak2U2, "Scroll U Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak2USpeed, "Scroll U Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak2USinAmp, "Scroll U Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak2USinFreq, "Scroll U Sin Frequency");
                                     materialEditor.ShaderProperty(EmissiveFreak2V, "Scroll V");
-                                    materialEditor.ShaderProperty(EmissiveFreak2V2, "Scroll V Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak2VSpeed, "Scroll V Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak2VSinAmp, "Scroll V Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak2VSinFreq, "Scroll V Sin Frequency");
                                 });
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.TexturePropertySingleLine(new GUIContent("Depth & Mask", "Depth and Mask Texture"), EmissiveFreak2DepthMask, EmissiveFreak2Depth);
@@ -975,11 +975,11 @@ namespace ArktoonShadersEFEX
                                 materialEditor.ShaderProperty(EmissiveFreak3ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak3U, "Scroll U");
-                                    materialEditor.ShaderProperty(EmissiveFreak3U2, "Scroll U Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak3USpeed, "Scroll U Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak3USinAmp, "Scroll U Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak3USinFreq, "Scroll U Sin Frequency");
                                     materialEditor.ShaderProperty(EmissiveFreak3V, "Scroll V");
-                                    materialEditor.ShaderProperty(EmissiveFreak3V2, "Scroll V Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak3VSpeed, "Scroll V Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak3VSinAmp, "Scroll V Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak3VSinFreq, "Scroll V Sin Frequency");
                                 });
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.TexturePropertySingleLine(new GUIContent("Depth & Mask", "Depth and Mask Texture"), EmissiveFreak3DepthMask, EmissiveFreak3Depth);
@@ -1008,11 +1008,11 @@ namespace ArktoonShadersEFEX
                                 materialEditor.ShaderProperty(EmissiveFreak4ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak4U, "Scroll U");
-                                    materialEditor.ShaderProperty(EmissiveFreak4U2, "Scroll U Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak4USpeed, "Scroll U Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak4USinAmp, "Scroll U Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak4USinFreq, "Scroll U Sin Frequency");
                                     materialEditor.ShaderProperty(EmissiveFreak4V, "Scroll V");
-                                    materialEditor.ShaderProperty(EmissiveFreak4V2, "Scroll V Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak4VSpeed, "Scroll V Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak4VSinAmp, "Scroll V Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak4VSinFreq, "Scroll V Sin Frequency");
                                 });
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.TexturePropertySingleLine(new GUIContent("Depth & Mask", "Depth and Mask Texture"), EmissiveFreak4DepthMask, EmissiveFreak4Depth);
@@ -1041,11 +1041,11 @@ namespace ArktoonShadersEFEX
                                 materialEditor.ShaderProperty(EmissiveFreak5ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak5U, "Scroll U");
-                                    materialEditor.ShaderProperty(EmissiveFreak5U2, "Scroll U Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak5USpeed, "Scroll U Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak5USinAmp, "Scroll U Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak5USinFreq, "Scroll U Sin Frequency");
                                     materialEditor.ShaderProperty(EmissiveFreak5V, "Scroll V");
-                                    materialEditor.ShaderProperty(EmissiveFreak5V2, "Scroll V Sin Value");
-                                    materialEditor.ShaderProperty(EmissiveFreak5VSpeed, "Scroll V Sin Speed");
+                                    materialEditor.ShaderProperty(EmissiveFreak5VSinAmp, "Scroll V Sin Amplitude");
+                                    materialEditor.ShaderProperty(EmissiveFreak5VSinFreq, "Scroll V Sin Frequency");
                                 });
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.TexturePropertySingleLine(new GUIContent("Depth & Mask", "Depth and Mask Texture"), EmissiveFreak5DepthMask, EmissiveFreak5Depth);
