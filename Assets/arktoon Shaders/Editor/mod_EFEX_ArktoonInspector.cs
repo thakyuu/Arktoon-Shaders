@@ -144,7 +144,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty LightSampling;
         MaterialProperty UsePositionRelatedCalc;
         MaterialProperty EmissiveFreak1Tex;
+        MaterialProperty EmissiveFreak1Tex2;
+        MaterialProperty EmissiveFreak1TransitionSpeed;
         MaterialProperty EmissiveFreak1Mask;
+        MaterialProperty EmissiveFreak1Mask2;
+        MaterialProperty EmissiveFreak1MaskTransitionSpeed;
         MaterialProperty EmissiveFreak1Color;
         MaterialProperty EmissiveFreak1Color2;
         MaterialProperty EmissiveFreak1ColorChangeSpeed;
@@ -165,7 +169,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty EmissiveFreak1BlinkInMix;
         MaterialProperty EmissiveFreak1HueShift;
         MaterialProperty EmissiveFreak2Tex;
+        MaterialProperty EmissiveFreak2Tex2;
+        MaterialProperty EmissiveFreak2TransitionSpeed;
         MaterialProperty EmissiveFreak2Mask;
+        MaterialProperty EmissiveFreak2Mask2;
+        MaterialProperty EmissiveFreak2MaskTransitionSpeed;
         MaterialProperty EmissiveFreak2Color;
         MaterialProperty EmissiveFreak2Color2;
         MaterialProperty EmissiveFreak2ColorChangeSpeed;
@@ -186,7 +194,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty EmissiveFreak2BlinkInMix;
         MaterialProperty EmissiveFreak2HueShift;
         MaterialProperty EmissiveFreak3Tex;
+        MaterialProperty EmissiveFreak3Tex2;
+        MaterialProperty EmissiveFreak3TransitionSpeed;
         MaterialProperty EmissiveFreak3Mask;
+        MaterialProperty EmissiveFreak3Mask2;
+        MaterialProperty EmissiveFreak3MaskTransitionSpeed;
         MaterialProperty EmissiveFreak3Color;
         MaterialProperty EmissiveFreak3Color2;
         MaterialProperty EmissiveFreak3ColorChangeSpeed;
@@ -207,7 +219,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty EmissiveFreak3BlinkInMix;
         MaterialProperty EmissiveFreak3HueShift;
         MaterialProperty EmissiveFreak4Tex;
+        MaterialProperty EmissiveFreak4Tex2;
+        MaterialProperty EmissiveFreak4TransitionSpeed;
         MaterialProperty EmissiveFreak4Mask;
+        MaterialProperty EmissiveFreak4Mask2;
+        MaterialProperty EmissiveFreak4MaskTransitionSpeed;
         MaterialProperty EmissiveFreak4Color;
         MaterialProperty EmissiveFreak4Color2;
         MaterialProperty EmissiveFreak4ColorChangeSpeed;
@@ -228,7 +244,11 @@ namespace ArktoonShadersEFEX
         MaterialProperty EmissiveFreak4BlinkInMix;
         MaterialProperty EmissiveFreak4HueShift;
         MaterialProperty EmissiveFreak5Tex;
+        MaterialProperty EmissiveFreak5Tex2;
+        MaterialProperty EmissiveFreak5TransitionSpeed;
         MaterialProperty EmissiveFreak5Mask;
+        MaterialProperty EmissiveFreak5Mask2;
+        MaterialProperty EmissiveFreak5MaskTransitionSpeed;
         MaterialProperty EmissiveFreak5Color;
         MaterialProperty EmissiveFreak5Color2;
         MaterialProperty EmissiveFreak5ColorChangeSpeed;
@@ -409,7 +429,11 @@ namespace ArktoonShadersEFEX
             ZWrite = FindProperty("_ZWrite", props, false);
 
             EmissiveFreak1Tex = FindProperty("_EmissiveFreak1Tex", props, false);
+            EmissiveFreak1Tex2 = FindProperty("_EmissiveFreak1Tex2", props, false);
+            EmissiveFreak1TransitionSpeed = FindProperty("_EmissiveFreak1TransitionSpeed", props, false);
             EmissiveFreak1Mask = FindProperty("_EmissiveFreak1Mask", props, false);
+            EmissiveFreak1Mask2 = FindProperty("_EmissiveFreak1Mask2", props, false);
+            EmissiveFreak1MaskTransitionSpeed = FindProperty("_EmissiveFreak1MaskTransitionSpeed", props, false);
             EmissiveFreak1Color = FindProperty("_EmissiveFreak1Color", props, false);
             EmissiveFreak1Color2 = FindProperty("_EmissiveFreak1Color2", props, false);
             EmissiveFreak1ColorChangeSpeed = FindProperty("_EmissiveFreak1ColorChangeSpeed", props, false);
@@ -431,7 +455,11 @@ namespace ArktoonShadersEFEX
             EmissiveFreak1HueShift = FindProperty("_EmissiveFreak1HueShift", props, false);
 
             EmissiveFreak2Tex = FindProperty("_EmissiveFreak2Tex", props, false);
+            EmissiveFreak2Tex2 = FindProperty("_EmissiveFreak2Tex2", props, false);
+            EmissiveFreak2TransitionSpeed = FindProperty("_EmissiveFreak2TransitionSpeed", props, false);
             EmissiveFreak2Mask = FindProperty("_EmissiveFreak2Mask", props, false);
+            EmissiveFreak2Mask2 = FindProperty("_EmissiveFreak2Mask2", props, false);
+            EmissiveFreak2MaskTransitionSpeed = FindProperty("_EmissiveFreak2MaskTransitionSpeed", props, false);
             EmissiveFreak2Color = FindProperty("_EmissiveFreak2Color", props, false);
             EmissiveFreak2Color2 = FindProperty("_EmissiveFreak2Color2", props, false);
             EmissiveFreak2ColorChangeSpeed = FindProperty("_EmissiveFreak2ColorChangeSpeed", props, false);
@@ -453,7 +481,11 @@ namespace ArktoonShadersEFEX
             EmissiveFreak2HueShift = FindProperty("_EmissiveFreak2HueShift", props, false);
 
             EmissiveFreak3Tex = FindProperty("_EmissiveFreak3Tex", props, false);
+            EmissiveFreak3Tex2 = FindProperty("_EmissiveFreak3Tex2", props, false);
+            EmissiveFreak3TransitionSpeed = FindProperty("_EmissiveFreak3TransitionSpeed", props, false);
             EmissiveFreak3Mask = FindProperty("_EmissiveFreak3Mask", props, false);
+            EmissiveFreak3Mask2 = FindProperty("_EmissiveFreak3Mask2", props, false);
+            EmissiveFreak3MaskTransitionSpeed = FindProperty("_EmissiveFreak3MaskTransitionSpeed", props, false);
             EmissiveFreak3Color = FindProperty("_EmissiveFreak3Color", props, false);
             EmissiveFreak3Color2 = FindProperty("_EmissiveFreak3Color2", props, false);
             EmissiveFreak3ColorChangeSpeed = FindProperty("_EmissiveFreak3ColorChangeSpeed", props, false);
@@ -475,7 +507,11 @@ namespace ArktoonShadersEFEX
             EmissiveFreak3HueShift = FindProperty("_EmissiveFreak3HueShift", props, false);
 
             EmissiveFreak4Tex = FindProperty("_EmissiveFreak4Tex", props, false);
+            EmissiveFreak4Tex2 = FindProperty("_EmissiveFreak4Tex2", props, false);
+            EmissiveFreak4TransitionSpeed = FindProperty("_EmissiveFreak4TransitionSpeed", props, false);
             EmissiveFreak4Mask = FindProperty("_EmissiveFreak4Mask", props, false);
+            EmissiveFreak4Mask2 = FindProperty("_EmissiveFreak4Mask2", props, false);
+            EmissiveFreak4MaskTransitionSpeed = FindProperty("_EmissiveFreak4MaskTransitionSpeed", props, false);
             EmissiveFreak4Color = FindProperty("_EmissiveFreak4Color", props, false);
             EmissiveFreak4Color2 = FindProperty("_EmissiveFreak4Color2", props, false);
             EmissiveFreak4ColorChangeSpeed = FindProperty("_EmissiveFreak4ColorChangeSpeed", props, false);
@@ -497,7 +533,11 @@ namespace ArktoonShadersEFEX
             EmissiveFreak4HueShift = FindProperty("_EmissiveFreak4HueShift", props, false);
 
             EmissiveFreak5Tex = FindProperty("_EmissiveFreak5Tex", props, false);
+            EmissiveFreak5Tex2 = FindProperty("_EmissiveFreak5Tex2", props, false);
+            EmissiveFreak5TransitionSpeed = FindProperty("_EmissiveFreak5TransitionSpeed", props, false);
             EmissiveFreak5Mask = FindProperty("_EmissiveFreak5Mask", props, false);
+            EmissiveFreak5Mask2 = FindProperty("_EmissiveFreak5Mask2", props, false);
+            EmissiveFreak5MaskTransitionSpeed = FindProperty("_EmissiveFreak5MaskTransitionSpeed", props, false);
             EmissiveFreak5Color = FindProperty("_EmissiveFreak5Color", props, false);
             EmissiveFreak5Color2 = FindProperty("_EmissiveFreak5Color2", props, false);
             EmissiveFreak5ColorChangeSpeed = FindProperty("_EmissiveFreak5ColorChangeSpeed", props, false);
@@ -905,8 +945,14 @@ namespace ArktoonShadersEFEX
                             UIHelper.DrawWithGroup(() => {
                                 materialEditor.TexturePropertySingleLine(new GUIContent("Texture & Color", "Texture and Color"), EmissiveFreak1Tex, EmissiveFreak1Color, EmissiveFreak1Color2);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak1Tex);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("Texture 2", "Texture 2"), EmissiveFreak1Tex2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak1Tex2);
+                                materialEditor.ShaderProperty(EmissiveFreak1TransitionSpeed, "Texture Transition Speed");
                                 materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask", "Texture and Color Mask"), EmissiveFreak1Mask);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak1Mask);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask2", "Texture and Color Mask2"), EmissiveFreak1Mask2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak1Mask2);
+                                materialEditor.ShaderProperty(EmissiveFreak1MaskTransitionSpeed, "Mask Transition Speed");
                                 materialEditor.ShaderProperty(EmissiveFreak1ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak1U, "Scroll U");
@@ -938,8 +984,14 @@ namespace ArktoonShadersEFEX
                             UIHelper.DrawWithGroup(() => {
                                 materialEditor.TexturePropertySingleLine(new GUIContent("Texture & Color", "Texture and Color"), EmissiveFreak2Tex, EmissiveFreak2Color, EmissiveFreak2Color2);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak2Tex);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("Texture 2", "Texture 2"), EmissiveFreak2Tex2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak2Tex2);
+                                materialEditor.ShaderProperty(EmissiveFreak2TransitionSpeed, "Texture Transition Speed");
                                 materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask", "Texture and Color Mask"), EmissiveFreak2Mask);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak2Mask);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask2", "Texture and Color Mask2"), EmissiveFreak2Mask2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak2Mask2);
+                                materialEditor.ShaderProperty(EmissiveFreak2MaskTransitionSpeed, "Mask Transition Speed");
                                 materialEditor.ShaderProperty(EmissiveFreak2ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak2U, "Scroll U");
@@ -970,8 +1022,14 @@ namespace ArktoonShadersEFEX
                             UIHelper.DrawWithGroup(() => {
                                 materialEditor.TexturePropertySingleLine(new GUIContent("Texture & Color", "Texture and Color"), EmissiveFreak3Tex, EmissiveFreak3Color, EmissiveFreak3Color2);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak3Tex);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("Texture 2", "Texture 2"), EmissiveFreak3Tex2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak3Tex2);
+                                materialEditor.ShaderProperty(EmissiveFreak3TransitionSpeed, "Texture Transition Speed");
                                 materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask", "Texture and Color Mask"), EmissiveFreak3Mask);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak3Mask);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask2", "Texture and Color Mask2"), EmissiveFreak3Mask2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak3Mask2);
+                                materialEditor.ShaderProperty(EmissiveFreak3MaskTransitionSpeed, "Mask Transition Speed");
                                 materialEditor.ShaderProperty(EmissiveFreak3ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak3U, "Scroll U");
@@ -1003,8 +1061,14 @@ namespace ArktoonShadersEFEX
                             UIHelper.DrawWithGroup(() => {
                                 materialEditor.TexturePropertySingleLine(new GUIContent("Texture & Color", "Texture and Color"), EmissiveFreak4Tex, EmissiveFreak4Color, EmissiveFreak4Color2);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak4Tex);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("Texture 2", "Texture 2"), EmissiveFreak4Tex2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak4Tex2);
+                                materialEditor.ShaderProperty(EmissiveFreak4TransitionSpeed, "Texture Transition Speed");
                                 materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask", "Texture and Color Mask"), EmissiveFreak4Mask);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak4Mask);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask2", "Texture and Color Mask2"), EmissiveFreak4Mask2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak4Mask2);
+                                materialEditor.ShaderProperty(EmissiveFreak4MaskTransitionSpeed, "Mask Transition Speed");
                                 materialEditor.ShaderProperty(EmissiveFreak4ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak4U, "Scroll U");
@@ -1036,8 +1100,14 @@ namespace ArktoonShadersEFEX
                             UIHelper.DrawWithGroup(() => {
                                 materialEditor.TexturePropertySingleLine(new GUIContent("Texture & Color", "Texture and Color"), EmissiveFreak5Tex, EmissiveFreak5Color, EmissiveFreak5Color2);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak5Tex);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("Texture 2", "Texture 2"), EmissiveFreak5Tex2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak5Tex2);
+                                materialEditor.ShaderProperty(EmissiveFreak5TransitionSpeed, "Texture Transition Speed");
                                 materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask", "Texture and Color Mask"), EmissiveFreak5Mask);
                                 materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak5Mask);
+                                materialEditor.TexturePropertySingleLine(new GUIContent("TexCol Mask2", "Texture and Color Mask2"), EmissiveFreak5Mask2);
+                                materialEditor.TextureScaleOffsetPropertyIndent(EmissiveFreak5Mask2);
+                                materialEditor.ShaderProperty(EmissiveFreak5MaskTransitionSpeed, "Mask Transition Speed");
                                 materialEditor.ShaderProperty(EmissiveFreak5ColorChangeSpeed, "Color Change Speed");
                                 UIHelper.DrawWithGroup(() => {
                                     materialEditor.ShaderProperty(EmissiveFreak5U, "Scroll U");
